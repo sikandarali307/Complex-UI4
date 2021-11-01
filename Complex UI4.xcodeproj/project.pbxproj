@@ -17,6 +17,11 @@
 		04895868272FC873000F16DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489583E272FC871000F16DD /* ContentView.swift */; };
 		04895869272FC873000F16DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0489583F272FC873000F16DD /* Assets.xcassets */; };
 		0489586A272FC873000F16DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0489583F272FC873000F16DD /* Assets.xcassets */; };
+		0489587C272FCA80000F16DD /* bnanna.png in Resources */ = {isa = PBXBuildFile; fileRef = 04895879272FCA80000F16DD /* bnanna.png */; };
+		0489587D272FCA80000F16DD /* ava.png in Resources */ = {isa = PBXBuildFile; fileRef = 0489587A272FCA80000F16DD /* ava.png */; };
+		0489587E272FCA80000F16DD /* stra.png in Resources */ = {isa = PBXBuildFile; fileRef = 0489587B272FCA80000F16DD /* stra.png */; };
+		04895882272FCB0D000F16DD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04895881272FCB0D000F16DD /* Home.swift */; };
+		04895884272FD14F000F16DD /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04895883272FD14F000F16DD /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		0489585D272FC873000F16DD /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04895861272FC873000F16DD /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		04895863272FC873000F16DD /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		04895879272FCA80000F16DD /* bnanna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bnanna.png; sourceTree = "<group>"; };
+		0489587A272FCA80000F16DD /* ava.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ava.png; sourceTree = "<group>"; };
+		0489587B272FCA80000F16DD /* stra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stra.png; sourceTree = "<group>"; };
+		04895881272FCB0D000F16DD /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		04895883272FD14F000F16DD /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,8 @@
 		0489583C272FC871000F16DD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				04895880272FCAF5000F16DD /* Views */,
+				0489587F272FCAED000F16DD /* Model */,
 				0489583D272FC871000F16DD /* Complex_UI4App.swift */,
 				0489583E272FC871000F16DD /* ContentView.swift */,
 				0489583F272FC873000F16DD /* Assets.xcassets */,
@@ -127,6 +139,9 @@
 			isa = PBXGroup;
 			children = (
 				04895855272FC873000F16DD /* Tests_iOS.swift */,
+				0489587A272FCA80000F16DD /* ava.png */,
+				04895879272FCA80000F16DD /* bnanna.png */,
+				0489587B272FCA80000F16DD /* stra.png */,
 				04895857272FC873000F16DD /* Tests_iOSLaunchTests.swift */,
 			);
 			path = "Tests iOS";
@@ -139,6 +154,22 @@
 				04895863272FC873000F16DD /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		0489587F272FCAED000F16DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04895883272FD14F000F16DD /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04895880272FCAF5000F16DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04895881272FCB0D000F16DD /* Home.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +297,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0489587D272FCA80000F16DD /* ava.png in Resources */,
+				0489587E272FCA80000F16DD /* stra.png in Resources */,
 				04895869272FC873000F16DD /* Assets.xcassets in Resources */,
+				0489587C272FCA80000F16DD /* bnanna.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +334,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04895867272FC873000F16DD /* ContentView.swift in Sources */,
+				04895882272FCB0D000F16DD /* Home.swift in Sources */,
+				04895884272FD14F000F16DD /* DataModel.swift in Sources */,
 				04895865272FC873000F16DD /* Complex_UI4App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
